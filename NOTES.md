@@ -86,3 +86,22 @@ git push
 -   `git push` = send commits to GitHub
 -   Global git config = saved on PC, applies to all projects
 -   Personal Access Token = GitHub password replacement, expires after set time
+
+## Log
+
+### 13.04.2025.
+
+**Process**
+Set up Git and GitHub from scratch. Created frontend-relearning repository, configured Git globally, cloned repo locally, wrote and structured README.md and NOTES.md.
+
+**Learning**
+
+-   Commit messages are written as commands, not first person
+-   `git add .` stages all changed files at once
+-   README is the public face, NOTES is personal
+-   Every commit builds visible history — that is the portfolio
+
+**Problems**
+
+-   Git push failed — GitHub no longer accepts passwords
+-   Solution: Personal Access Token via Settings → Developer settings
