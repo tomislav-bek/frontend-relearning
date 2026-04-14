@@ -105,3 +105,78 @@ Set up Git and GitHub from scratch. Created frontend-relearning repository, conf
 
 - Git push failed — GitHub no longer accepts passwords
 - Solution: Personal Access Token via Settings → Developer settings
+
+---
+
+## HTML
+
+HTML (HyperText Markup Language) is the standard language for creating web pages.
+The current version is HTML5, released in 2014, which introduced semantic elements,
+audio/video support and better structure overall. Browsers read HTML and render it
+as visible content on screen.
+
+### HTML Boilerplate
+
+Generated automatically with `!` + Tab in VS Code (Emmet).
+
+**<!DOCTYPE html>**
+Tells the browser this is an HTML5 document. Older versions of HTML had longer
+and more complex doctypes — this short version is the modern standard.
+
+**<html lang="en">**
+Root element that wraps the entire page. The lang attribute tells the browser,
+search engines and screen readers what language the content is written in.
+
+**<head>**
+Contains metadata about the page — not visible to the user, but important for
+the browser, search engines and other tools.
+
+**<meta charset="UTF-8">**
+Tells the browser which character encoding to use. UTF-8 supports almost all
+characters from all languages, including Croatian letters č, ć, š, đ, ž.
+
+**<meta name="viewport" content="width=device-width, initial-scale=1.0">**
+Makes the page responsive. Tells the browser to set the width to the device
+screen width and not to zoom out on mobile devices.
+
+**<title>**
+Sets the name of the page — visible on the browser tab and in search engine results.
+
+**<body>**
+Contains all visible content on the page. Everything the user sees goes here.
+
+### Headings & Paragraphs
+
+**h1-h6**
+Define content hierarchy on the page. The lower the number, the more important the
+heading. Only one h1 per page — it tells search engines and screen readers what the
+page is about. h2-h6 are used for subheadings and deeper structure. Size is visual
+but semantics is what matters — CSS can always change the appearance.
+
+**p**
+Wraps a block of text into a paragraph. All visible body text on a page goes inside
+a p tag. Browsers automatically add spacing above and below each paragraph.
+
+### Log
+
+#### 14.04.2025.
+
+**Process**
+Created folder structure for the relearning repo. Added html, css, javascript, react
+and nextjs folders. Created first HTML file with headings and paragraph example.
+Used .gitkeep to track empty folders in Git.
+
+**Learning**
+
+- Git does not track empty folders — use .gitkeep as a placeholder
+- Emmet in VS Code generates HTML boilerplate with ! + Tab
+- DOCTYPE tells the browser this is HTML5
+- charset UTF-8 supports all characters including Croatian letters
+- viewport meta tag makes the page responsive to screen size
+- h1-h6 are semantic not just visual — search engines read the hierarchy
+- Only one h1 per page
+- p tag wraps all visible body text
+
+**Problems**
+
+- Empty folders were not pushed to GitHub — solved with .gitkeep
