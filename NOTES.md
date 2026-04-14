@@ -119,43 +119,56 @@ as visible content on screen.
 
 Generated automatically with `!` + Tab in VS Code (Emmet).
 
-**<!DOCTYPE html>**
-Tells the browser this is an HTML5 document. Older versions of HTML had longer
-and more complex doctypes — this short version is the modern standard.
+**`<!DOCTYPE html>`**
 
-**<html lang="en">**
-Root element that wraps the entire page. The lang attribute tells the browser,
-search engines and screen readers what language the content is written in.
+- Tells the browser this is an HTML5 document
+- Older versions had longer and more complex doctypes — this short version is the modern standard
 
-**<head>**
-Contains metadata about the page — not visible to the user, but important for
-the browser, search engines and other tools.
+**`<html lang="en">`**
 
-**<meta charset="UTF-8">**
-Tells the browser which character encoding to use. UTF-8 supports almost all
-characters from all languages, including Croatian letters č, ć, š, đ, ž.
+- Root element that wraps the entire page
+- The lang attribute tells the browser, search engines and screen readers what language the content is in
 
-**<meta name="viewport" content="width=device-width, initial-scale=1.0">**
-Makes the page responsive. Tells the browser to set the width to the device
-screen width and not to zoom out on mobile devices.
+**`<head>`**
 
-**<title>**
-Sets the name of the page — visible on the browser tab and in search engine results.
+- Contains metadata about the page
+- Not visible to the user, but important for the browser, search engines and other tools
 
-**<body>**
-Contains all visible content on the page. Everything the user sees goes here.
+**`<meta charset="UTF-8">`**
+
+- Tells the browser which character encoding to use
+- UTF-8 supports almost all characters from all languages, including Croatian letters č, ć, š, đ, ž
+
+**`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**
+
+- Makes the page responsive
+- Tells the browser to set the width to the device screen width and not to zoom out on mobile
+
+**`<title>`**
+
+- Sets the name of the page
+- Visible on the browser tab and in search engine results
+
+**`<body>`**
+
+- Contains all visible content on the page
+- Everything the user sees goes here
 
 ### Headings & Paragraphs
 
-**h1-h6**
-Define content hierarchy on the page. The lower the number, the more important the
-heading. Only one h1 per page — it tells search engines and screen readers what the
-page is about. h2-h6 are used for subheadings and deeper structure. Size is visual
-but semantics is what matters — CSS can always change the appearance.
+**`h1-h6`**
 
-**p**
-Wraps a block of text into a paragraph. All visible body text on a page goes inside
-a p tag. Browsers automatically add spacing above and below each paragraph.
+- Define content hierarchy on the page
+- The lower the number, the more important the heading
+- Only one h1 per page — tells search engines and screen readers what the page is about
+- h2-h6 are used for subheadings and deeper structure
+- Size is visual but semantics is what matters — CSS can always change the appearance
+
+**`p`**
+
+- Wraps a block of text into a paragraph
+- All visible body text on a page goes inside a p tag
+- Browsers automatically add spacing above and below each paragraph
 
 ### Log
 
