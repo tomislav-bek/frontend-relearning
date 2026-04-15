@@ -193,3 +193,39 @@ Used .gitkeep to track empty folders in Git.
 **Problems**
 
 - Empty folders were not pushed to GitHub — solved with .gitkeep
+
+### Links & Images
+
+**`<a>` — Anchor element**
+
+- The `<a>` element is used to create hyperlinks
+- By itself it does nothing — it requires the `href` attribute to define the destination
+- The `target` attribute controls where the link opens — `target="_blank"` opens in a new tab
+- Convention: use `target="_blank"` for external links, not internal ones
+
+**`<img>` — Image element**
+
+- The `<img>` element displays an image on a web page
+- It is a **self-closing tag** — it has no closing tag
+- Requires the `src` attribute to define the image source (URL or local file path)
+- The `alt` attribute provides a text description of the image — important for accessibility and SEO
+
+### Log
+
+#### 15.04.2025.
+
+**Process**
+
+Created links-and-images.html with an external link to Google and a placeholder image.
+
+**Learning**
+
+- `<a>` requires `href` to function — without it, it renders as plain text
+- `target="_blank"` opens the link in a new tab — use it for external links only
+- `<img>` is self-closing — no closing tag needed
+- `src` defines the image source — can be a URL or a local file path
+- `alt` describes the image for screen readers and search engines — always include it
+
+**Problems**
+
+- None

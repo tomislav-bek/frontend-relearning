@@ -11,6 +11,7 @@ HTML → CSS → JavaScript → React → Next.js
 ### HTML & CSS
 
 - [x] Headings & Paragraphs
+- [x] Links & Images
 - [ ] ...
 
 ### JavaScript
