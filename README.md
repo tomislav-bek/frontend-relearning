@@ -1,10 +1,14 @@
 # Frontend Relearning
 
-After finishing college and a frontend course, I struggled to break into the industry — no portfolio, no GitHub, no real projects. This is me fixing that, one commit at a time.
+A structured repository for rebuilding my frontend fundamentals through consistent practice, notes, and small commits.
 
 ## Stack
 
 HTML → CSS → JavaScript → React → Next.js
+
+## Goal
+
+To relearn core frontend topics step by step and document the process publicly as part of my portfolio.
 
 ## Progress
 
