@@ -254,7 +254,8 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 ### 18.04.2026
 
 **Process**
-Created a basic `lists.html` file with ordered and unordered lists.
+
+- Created a basic lists folder with `index.html` file with ordered and unordered lists.
 
 **Learning**
 
@@ -262,6 +263,77 @@ Created a basic `lists.html` file with ordered and unordered lists.
 - `<ul>` is for unordered lists with bullet points.
 - `<li>` is one item in a list.
 - This example is simple for now because it will be expanded later in a project.
+
+**Problems**
+
+- None.
+
+### Forms
+
+### `form` — Form element
+
+- The `form` element is used to group input fields and submit them together.
+- It is used for collecting or sending data.
+- It wraps the whole form.
+
+### `label` — Label element
+
+- The `label` element gives a visible name to an input field.
+- It explains what the user should type in that field.
+- It is connected to the input with `for` and `id`.
+
+### `input` — Input element
+
+- The `input` element is used for single-line fields.
+- `type="text"` tells the browser that the field is for text.
+- `type="email"` tells the browser that the field should contain an email address.
+- `input` fields are limited because they do not show the full message at once.
+
+### `textarea` — Textarea element
+
+- The `textarea` element is used for longer text.
+- It shows the full message better than a normal input field.
+- It is useful for messages, comments, or anything longer than one line.
+
+### `button` — Button element
+
+- The `button` element is used to submit the form.
+- `type="submit"` tells the browser that the form should be sent.
+- It is the final step after filling in the fields.
+
+### `required` — Required attribute
+
+- The `required` attribute makes a field mandatory.
+- The form cannot be submitted if the field is empty.
+- It is used when the input is important and must be filled in.
+
+### Small difference
+
+- `input` is used for short, single-line values.
+- `textarea` is used for longer text that needs more space.
+- `label` makes the field clear and easier to understand.
+
+## Log
+
+### 18.04.2026
+
+**Process**
+
+- Created a simple `forms.html` file with name, email, message, and submit button.
+- Kept the form simple for learning.
+- Used the basic structure with labels and input fields.
+
+**Learning**
+
+- A form is a combination of labels and input fields used for sending or collecting data.
+- `label` gives the field a visible name.
+- `for` and `id` are used to connect the label with the input.
+- `input type="text"` is for text.
+- `input type="email"` is for email addresses.
+- `textarea` is better for longer messages.
+- `button type="submit"` sends the form.
+- `required` makes the field mandatory.
+- This form is enough for now because later I will make projects where I use more things together.
 
 **Problems**
 
