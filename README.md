@@ -16,6 +16,7 @@ To relearn core frontend topics step by step and document the process publicly a
 
 - [x] Headings & Paragraphs
 - [x] Links & Images
+- [x] Lists
 - [ ] ...
 
 ### JavaScript

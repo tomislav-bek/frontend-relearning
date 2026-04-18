@@ -223,3 +223,46 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 **Problems**
 
 - None.
+
+### Lists
+
+### `<ol>` — Ordered list
+
+- The `<ol>` element is used for lists where the order matters.
+- It shows the items with numbers.
+- Use it when the sequence is important.
+
+### `<ul>` — Unordered list
+
+- The `<ul>` element is used for lists where the order does not matter.
+- It shows the items with bullet points.
+- Use it when the items can be in any order.
+
+### `<li>` — List item
+
+- The `<li>` element represents one item inside a list.
+- It must go inside an `<ol>` or `<ul>` element.
+- Without `<li>`, the list does not have separate items.
+
+### Small difference
+
+- Use `<ol>` when the order matters.
+- Use `<ul>` when the order does not matter.
+
+## Log
+
+### 18.04.2026
+
+**Process**
+Created a basic `lists.html` file with ordered and unordered lists.
+
+**Learning**
+
+- `<ol>` is for ordered lists with a specific order.
+- `<ul>` is for unordered lists with bullet points.
+- `<li>` is one item in a list.
+- This example is simple for now because it will be expanded later in a project.
+
+**Problems**
+
+- None.
