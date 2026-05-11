@@ -64,9 +64,10 @@ How to generate a token:
 - Expiration: 90 days.
 - Scope: check only `repo`
 - Copy the token immediately — GitHub shows it only once.
-
 - Windows saved the token via a popup (Windows Credential Manager).
 - Next push will work without asking again.
+
+---
 
 ## Daily workflow
 
@@ -77,6 +78,41 @@ How to generate a token:
 - `git add .` adds all changed files at once.
 - `git add filename` adds only one specific file.
 
+## Git Commit Messages
+
+I started using clearer commit messages that describe the main purpose of each commit.
+
+### Common commit types
+
+- `feat:` — a new feature or something new I added.
+- `fix:` — a bug fix.
+- `refactor:` — restructuring existing code without changing the main behavior.
+- `docs:` — changes to documentation, README, or notes.
+- `chore:` — technical or maintenance changes that are not features or bug fixes.
+
+### Examples
+
+- `feat: add new HTML file`
+- `feat: add semantic HTML example`
+- `fix: correct navbar spacing`
+- `refactor: restructure navbar`
+- `docs: update README and notes`
+- `chore: clean up project files`
+
+### Rule I follow
+
+I choose one main purpose for each commit message.
+
+If I change several related things in one commit, I still use one message that describes the whole change.
+
+Commit messages are short summaries, not a list of every single file or line changed.
+
+### What I learned
+
+- Commit messages should summarize the change, not describe every detail.
+- The commit type helps show what kind of change it is.
+- I am starting to use this format as a more organized Git practice.
+
 ## Key concepts
 
 - `cd` = change directory, used to navigate folders in terminal.
@@ -86,6 +122,8 @@ How to generate a token:
 - `git push` = sends commits to GitHub.
 - Global Git config = saved on the PC and applies to all projects.
 - Personal Access Token = GitHub password replacement, expires after a set time.
+
+---
 
 ## Log
 
@@ -151,6 +189,8 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - Contains all visible content on the page.
 - Everything the user sees goes here.
 
+---
+
 ## Headings & Paragraphs
 
 ### `h1-h6`
@@ -167,29 +207,9 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - All visible body text on a page goes inside a `p` tag.
 - Browsers automatically add spacing above and below each paragraph.
 
-## Log
+---
 
-### 14.04.2025
-
-**Process**
-Created the folder structure for the relearning repo. Added `html`, `css`, `javascript`, `react`, and `nextjs` folders. Created the first HTML file with headings and paragraph examples. Used `.gitkeep` to track empty folders in Git.
-
-**Learning**
-
-- Git does not track empty folders — use `.gitkeep` as a placeholder.
-- Emmet in VS Code generates HTML boilerplate with `!` + Tab.
-- DOCTYPE tells the browser this is HTML5.
-- `charset UTF-8` supports all characters, including Croatian letters.
-- The viewport meta tag makes the page responsive to screen size.
-- `h1-h6` are semantic, not just visual — search engines read the hierarchy.
-- Only one `h1` per page.
-- `p` tags wrap visible body text.
-
-**Problems**
-
-- Empty folders were not pushed to GitHub — solved with `.gitkeep`.
-
-### Links & Images
+## Links & Images
 
 ### `<a>` — Anchor element
 
@@ -205,26 +225,9 @@ Created the folder structure for the relearning repo. Added `html`, `css`, `java
 - It requires the `src` attribute to define the image source (URL or local file path).
 - The `alt` attribute provides a text description of the image — important for accessibility and SEO.
 
-## Log
+---
 
-### 15.04.2025
-
-**Process**
-Created `links-and-images.html` with an external link to Google and a placeholder image.
-
-**Learning**
-
-- `<a>` requires `href` to function — without it, it renders as plain text.
-- `target="_blank"` opens the link in a new tab — use it for external links only.
-- `<img>` is self-closing — no closing tag needed.
-- `src` defines the image source — can be a URL or a local file path.
-- `alt` describes the image for screen readers and search engines — always include it.
-
-**Problems**
-
-- None.
-
-### Lists
+## Lists
 
 ### `<ol>` — Ordered list
 
@@ -249,26 +252,9 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 - Use `<ol>` when the order matters.
 - Use `<ul>` when the order does not matter.
 
-## Log
+---
 
-### 18.04.2026
-
-**Process**
-
-- Created a basic lists folder with `index.html` file with ordered and unordered lists.
-
-**Learning**
-
-- `<ol>` is for ordered lists with a specific order.
-- `<ul>` is for unordered lists with bullet points.
-- `<li>` is one item in a list.
-- This example is simple for now because it will be expanded later in a project.
-
-**Problems**
-
-- None.
-
-### Forms
+## Forms
 
 ### `form` — Form element
 
@@ -313,33 +299,9 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 - `textarea` is used for longer text that needs more space.
 - `label` makes the field clear and easier to understand.
 
-## Log
+---
 
-### 18.04.2026
-
-**Process**
-
-- Created a simple `forms.html` file with name, email, message, and submit button.
-- Kept the form simple for learning.
-- Used the basic structure with labels and input fields.
-
-**Learning**
-
-- A form is a combination of labels and input fields used for sending or collecting data.
-- `label` gives the field a visible name.
-- `for` and `id` are used to connect the label with the input.
-- `input type="text"` is for text.
-- `input type="email"` is for email addresses.
-- `textarea` is better for longer messages.
-- `button type="submit"` sends the form.
-- `required` makes the field mandatory.
-- This form is enough for now because later I will make projects where I use more things together.
-
-**Problems**
-
-- None.
-
-### Semantic HTML
+## Semantic HTML
 
 ### `<header>` — Header element
 
@@ -393,6 +355,8 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 - `<article>` is for content that can stand on its own.
 - `<aside>` is for side content.
 - `<footer>` is for the bottom part of the page or section.
+
+---
 
 ## Log
 
