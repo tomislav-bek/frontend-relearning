@@ -96,7 +96,7 @@ I started using clearer commit messages that describe the main purpose of each c
 - `feat: add semantic HTML example`
 - `fix: correct navbar spacing`
 - `refactor: restructure navbar`
-- `docs: update README and notes`
+- `docs: update README.md and NOTES.md`
 - `chore: clean up project files`
 
 ### Rule I follow
@@ -207,9 +207,29 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - All visible body text on a page goes inside a `p` tag.
 - Browsers automatically add spacing above and below each paragraph.
 
----
+## Log
 
-## Links & Images
+### 14.04.2025
+
+**Process**
+Created the folder structure for the relearning repo. Added `html`, `css`, `javascript`, `react`, and `nextjs` folders. Created the first HTML file with headings and paragraph examples. Used `.gitkeep` to track empty folders in Git.
+
+**Learning**
+
+- Git does not track empty folders — use `.gitkeep` as a placeholder.
+- Emmet in VS Code generates HTML boilerplate with `!` + Tab.
+- DOCTYPE tells the browser this is HTML5.
+- `charset UTF-8` supports all characters, including Croatian letters.
+- The viewport meta tag makes the page responsive to screen size.
+- `h1-h6` are semantic, not just visual — search engines read the hierarchy.
+- Only one `h1` per page.
+- `p` tags wrap visible body text.
+
+**Problems**
+
+- Empty folders were not pushed to GitHub — solved with `.gitkeep`.
+
+### Links & Images
 
 ### `<a>` — Anchor element
 
@@ -225,9 +245,26 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - It requires the `src` attribute to define the image source (URL or local file path).
 - The `alt` attribute provides a text description of the image — important for accessibility and SEO.
 
----
+## Log
 
-## Lists
+### 15.04.2025
+
+**Process**
+Created `links-and-images.html` with an external link to Google and a placeholder image.
+
+**Learning**
+
+- `<a>` requires `href` to function — without it, it renders as plain text.
+- `target="_blank"` opens the link in a new tab — use it for external links only.
+- `<img>` is self-closing — no closing tag needed.
+- `src` defines the image source — can be a URL or a local file path.
+- `alt` describes the image for screen readers and search engines — always include it.
+
+**Problems**
+
+- None.
+
+### Lists
 
 ### `<ol>` — Ordered list
 
@@ -252,9 +289,26 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - Use `<ol>` when the order matters.
 - Use `<ul>` when the order does not matter.
 
----
+## Log
 
-## Forms
+### 18.04.2026
+
+**Process**
+
+- Created a basic lists folder with `index.html` file with ordered and unordered lists.
+
+**Learning**
+
+- `<ol>` is for ordered lists with a specific order.
+- `<ul>` is for unordered lists with bullet points.
+- `<li>` is one item in a list.
+- This example is simple for now because it will be expanded later in a project.
+
+**Problems**
+
+- None.
+
+### Forms
 
 ### `form` — Form element
 
@@ -299,9 +353,33 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - `textarea` is used for longer text that needs more space.
 - `label` makes the field clear and easier to understand.
 
----
+## Log
 
-## Semantic HTML
+### 18.04.2026
+
+**Process**
+
+- Created a simple `forms.html` file with name, email, message, and submit button.
+- Kept the form simple for learning.
+- Used the basic structure with labels and input fields.
+
+**Learning**
+
+- A form is a combination of labels and input fields used for sending or collecting data.
+- `label` gives the field a visible name.
+- `for` and `id` are used to connect the label with the input.
+- `input type="text"` is for text.
+- `input type="email"` is for email addresses.
+- `textarea` is better for longer messages.
+- `button type="submit"` sends the form.
+- `required` makes the field mandatory.
+- This form is enough for now because later I will make projects where I use more things together.
+
+**Problems**
+
+- None.
+
+### Semantic HTML
 
 ### `<header>` — Header element
 
@@ -355,8 +433,6 @@ Generated automatically with `!` + Tab in VS Code (Emmet).
 - `<article>` is for content that can stand on its own.
 - `<aside>` is for side content.
 - `<footer>` is for the bottom part of the page or section.
-
----
 
 ## Log
 
