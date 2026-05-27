@@ -5,7 +5,12 @@
 ### Git & GitHub Setup Notes
 
 **Process**
-Set up Git and GitHub from scratch. Created the `frontend-relearning` repository, configured Git globally, cloned the repo locally, and wrote and structured `README.md` and `NOTES.md`.
+
+- Set up Git and GitHub version control environments from scratch.
+- Created the core `frontend-relearning` remote repository.
+- Configured essential Git global settings locally.
+- Cloned the remote repository to the local machine workspace.
+- Authored and structured the initial repository `README.md` and `NOTES.md` files.
 
 **Learning**
 
@@ -26,7 +31,11 @@ Set up Git and GitHub from scratch. Created the `frontend-relearning` repository
 ### HTML Boilerplate and Headings
 
 **Process**
-Created the folder structure for the relearning repo. Added `html`, `css`, `javascript`, `react`, and `nextjs` folders. Created the first HTML file with headings and paragraph examples. Used `.gitkeep` to track empty folders in Git.
+
+- Designed the base folder directory structure for the complete relearning roadmap.
+- Added dedicated workspace folders for `html`, `css`, `javascript`, `react`, and `nextjs`.
+- Authored the first practice HTML file focusing on headings and semantic paragraphs.
+- Implemented `.gitkeep` placeholder files inside empty directories to ensure tracking.
 
 **Learning**
 
@@ -50,7 +59,10 @@ Created the folder structure for the relearning repo. Added `html`, `css`, `java
 ### Links & Images
 
 **Process**
-Created `links-and-images.html` with an external link to Google and a placeholder image.
+
+- Created the `links-and-images.html` development practice file.
+- Embedded an external hyperlink navigating out to Google.
+- Implemented a local placeholder image asset inside the markup.
 
 **Learning**
 
@@ -71,7 +83,10 @@ Created `links-and-images.html` with an external link to Google and a placeholde
 ### Lists
 
 **Process**
-Created a basic lists folder with `index.html` file with ordered and unordered lists.
+
+- Created a dedicated practice subdirectory for layout lists.
+- Authored an `index.html` file testing structured list elements.
+- Implemented examples displaying ordered lists and unordered lists side by side.
 
 **Learning**
 
@@ -91,7 +106,11 @@ Created a basic lists folder with `index.html` file with ordered and unordered l
 ### Forms
 
 **Process**
-Created a simple `forms.html` file with name, email, message, and submit button. Kept the form simple for learning. Used the basic structure with labels and input fields.
+
+- Created a dedicated `forms.html` workspace practice file.
+- Built out form fields to capture user name, user email, and user messages.
+- Added a functional submission button to complete the form scope.
+- Linked text labels to input areas to keep layout connections clean.
 
 **Learning**
 
@@ -116,7 +135,10 @@ Created a simple `forms.html` file with name, email, message, and submit button.
 ### Semantic HTML
 
 **Process**
-Created a simple semantic HTML file. Used `header`, `nav`, `main`, `section`, `article`, `aside`, and `footer`. Kept the example simple for learning.
+
+- Created a baseline semantic structural layout file for testing.
+- Implemented standard structural building blocks like `header`, `nav`, `main`, and `footer`.
+- Organized content sections internally using modern tags like `section`, `article`, and `aside`.
 
 **Learning**
 
@@ -141,7 +163,11 @@ Created a simple semantic HTML file. Used `header`, `nav`, `main`, `section`, `a
 ### Tables
 
 **Process**
-Started the tables section in the HTML relearning notes. Learned the main table elements and their purpose. Added table structure basics, table sections, the `scope` attribute, and spanning cells. Kept the example simple and semantic for practice.
+
+- Initialized a brand new tables subfolder inside the HTML learning history tree.
+- Studied and documented foundational tabular layout elements and accessibility standards.
+- Designed a semantic weekly schedule demonstrating row layout foundations and grid sections.
+- Configured grid cells with custom span settings and data cell association rules.
 
 **Learning**
 
@@ -161,12 +187,19 @@ Started the tables section in the HTML relearning notes. Learned the main table 
 
 - None.
 
+---
+
 ### 27.05.2026
 
 ### Documentation Restructuring
 
 **Process**
-Completely restructured the repository's documentation logic. Created a dedicated `logs.md` file, a standalone master `general-notes.md` file, and implemented a one-Markdown-file-per-folder layout for topic subfolders. Standardized all personal note files to lowercase kebab-case.
+
+- Completely restructured the repository's documentation layout and logic.
+- Created a dedicated `logs.md` file to track daily progress independently.
+- Created a standalone `general-notes.md` master file for global HTML concepts.
+- Implemented a decentralized, one-Markdown-file-per-folder structure for topic subfolders.
+- Standardized all personal documentation and note filenames to lowercase kebab-case.
 
 **Learning**
 
