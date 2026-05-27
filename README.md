@@ -19,6 +19,7 @@ To relearn core frontend topics step by step and document the process publicly a
 - [x] Lists
 - [x] Forms
 - [x] Semantic HTML
+- [x] Tables
 - [ ] ...
 
 ### JavaScript

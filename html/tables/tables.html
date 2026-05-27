@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Tables</title>
+</head>
+
+<body>
+	<h1>HTML Tables</h1>
+
+	<table>
+		<caption>Weekly Frontend Practice Plan</caption>
+		<thead>
+			<tr>
+				<th scope="col">Day</th>
+				<th scope="col">Morning</th>
+				<th scope="col">Afternoon</th>
+				<th scope="col">Evening</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Monday</th>
+				<td colspan="2">HTML tables practice</td>
+				<td>Notes review</td>
+			</tr>
+			<tr>
+				<th scope="row">Tuesday</th>
+				<td>Semantic HTML</td>
+				<td>Git practice</td>
+				<td rowspan="2">Project work</td>
+			</tr>
+			<tr>
+				<th scope="row">Wednesday</th>
+				<td>Accessibility basics</td>
+				<td colspan="2">Revisit table examples</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Simple table example with colspan, rowspan, caption, and scope.</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
