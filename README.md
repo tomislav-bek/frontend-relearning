@@ -12,7 +12,7 @@ To relearn core frontend topics step by step and document the process publicly a
 
 ## Progress
 
-### HTML & CSS
+### HTML
 
 - [x] Headings & Paragraphs
 - [x] Links & Images
@@ -22,6 +22,12 @@ To relearn core frontend topics step by step and document the process publicly a
 - [x] Tables
 - [x] Audio & Video
 - [x] Attributes & Navigation
+- [x] Global Attributes & Page Navigation
+- [x] Entities, Iframes & Containers
+- [ ] ...
+
+### CSS
+
 - [ ] ...
 
 ### JavaScript

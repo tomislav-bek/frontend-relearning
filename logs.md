@@ -211,6 +211,8 @@
 - Managing all notes in a single giant file became cluttered and unreadable as the number of topics grew.
 - Solution: Transitioned to a decentralized "Component-Based" documentation system by assigning a single note file to each respective subfolder.
 
+---
+
 ### 03.06.2026
 
 ### Multi-Line Commit Methodology & Media Implementation
@@ -235,6 +237,8 @@
 - Combining multiple related file changes (HTML, MD, and README updates) under a single short commit message felt incomplete and lacked proper detail.
 - Solution: Adopted a structured "Headline + Body" multi-line commit approach to maintain a highly transparent, clean, and professional repository history.
 
+---
+
 ### 03.06.2026
 
 ### HTML Global Attributes & Page Navigation
@@ -258,3 +262,27 @@
 
 - Encountered a fatal terminal error when trying to run a multi-line git commit using the backslash (\) syntax in VS Code.
 - Solution: Realized that Windows PowerShell does not recognize the Bash backslash character for newlines. Solved it by formatting the multi-line commit into a single continuous command chain.
+
+---
+
+### 03.06.2026
+
+### HTML Containers, Iframes, and Special Entities
+
+**Process**
+
+- Created an entities-iframes-and-containers folder with HTML and MD files.
+- Used generic div containers to isolate and group related layout elements.
+- Implemented an iframe element to embed a local markdown file as a scrollable window.
+- Applied HTML entity codes like &lt; and &gt; to display raw code symbols safely in text.
+- Documented the full theory and architectural purposes of these elements in the markdown file.
+
+**Learning**
+
+- The div element has no semantic meaning or default styles, serving purely as a structure container for future CSS.
+- An iframe acts as an inline window that can load and display standalone documents inside the current page.
+- Reserved characters like less-than and greater-than signs must be converted to text entities to prevent browser parsing errors.
+
+**Problems**
+
+- None.
