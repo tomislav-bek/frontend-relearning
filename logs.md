@@ -210,3 +210,27 @@
 
 - Managing all notes in a single giant file became cluttered and unreadable as the number of topics grew.
 - Solution: Transitioned to a decentralized "Component-Based" documentation system by assigning a single note file to each respective subfolder.
+
+### 03.06.2026
+
+### Multi-Line Commit Methodology & Media Implementation
+
+**Process**
+
+- Created a dedicated audio-and-video.html file to practice native media elements.
+- Added a matching audio-and-video.md file in the topic folder to document how these elements function.
+- Updated the main README.md file with a general overview to integrate the new section into the learning path.
+- Transitioned from short single-line Git commits to a detailed multi-line commit methodology using multiple -m flags in the terminal.
+- Documented this new Git workflow and formatting standard in the general-notes.md master file.
+
+**Learning**
+
+- Industry-standard Git commits for large updates require a short imperative headline followed by a descriptive, bulleted body to provide clear context for employers.
+- Multi-line commits can be executed directly from the raw terminal by chaining multiple -m flags, where each flag generates a new paragraph or bullet point.
+- Writing commits in the imperative mood (e.g., "Add" instead of "Added") correctly answers the professional standard of what the commit will do when applied.
+- Understood that Markdown syntax like asterisks and hashes belongs in text files for formatting, while clean, raw text should be used inside terminal Bash commands to keep the Git log professional.
+
+**Problems**
+
+- Combining multiple related file changes (HTML, MD, and README updates) under a single short commit message felt incomplete and lacked proper detail.
+- Solution: Adopted a structured "Headline + Body" multi-line commit approach to maintain a highly transparent, clean, and professional repository history.

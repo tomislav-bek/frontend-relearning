@@ -118,3 +118,21 @@ I started using clearer commit messages that describe the main purpose of each c
 - `git push` = sends commits to GitHub.
 - Global Git config = saved on the PC and applies to all projects.
 - Personal Access Token = GitHub password replacement, expires after a set time.
+
+### Detailed Multi-line Commits
+
+For larger updates that include multiple related changes, I use a multi-line format (a short headline followed by bullet points). This keeps the Git history clean while providing clear context.
+
+- **Headline:** A short imperative summary (under 50 characters).
+- **Blank line:** Separates the headline from the body.
+- **Body:** Bullet points describing exactly what was added, changed, or updated.
+
+**Terminal syntax for multi-line commits:**
+Each `-m` flag creates a new paragraph or bullet point in the terminal.
+
+```bash
+git commit -m "Add audio and video learning materials" \
+           -m "- Add audio-and-video HTML page with examples" \
+           -m "- Add explanation and guide in audio-and-video.md" \
+           -m "- Update main README with the new section"
+```
