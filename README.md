@@ -21,6 +21,7 @@ To relearn core frontend topics step by step and document the process publicly a
 - [x] Semantic HTML
 - [x] Tables
 - [x] Audio & Video
+- [x] Attributes & Navigation
 - [ ] ...
 
 ### JavaScript

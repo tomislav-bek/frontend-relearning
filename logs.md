@@ -234,3 +234,27 @@
 
 - Combining multiple related file changes (HTML, MD, and README updates) under a single short commit message felt incomplete and lacked proper detail.
 - Solution: Adopted a structured "Headline + Body" multi-line commit approach to maintain a highly transparent, clean, and professional repository history.
+
+### 03.06.2026
+
+### HTML Global Attributes & Page Navigation
+
+**Process**
+
+- Created an attributes-and-navigation folder with HTML and MD files.
+- Implemented an isolated anchor link example using the unique id attribute.
+- Added a reusable class attribute to multiple elements to practice grouping.
+- Documented the core definitions and practical purposes of id and class in the markdown file.
+- Updated the main README.md structure to include this global attributes milestone.
+
+**Learning**
+
+- Global attributes like id and class can be applied to absolutely any HTML element.
+- The id attribute must be 100% unique per page, which is why anchor navigation requires it to target the destination.
+- The class attribute is non-unique and can be shared among multiple elements for grouping.
+- Internal page navigation works by combining href="#target-name" on the link with id="target-name" on the destination.
+
+**Problems**
+
+- Encountered a fatal terminal error when trying to run a multi-line git commit using the backslash (\) syntax in VS Code.
+- Solution: Realized that Windows PowerShell does not recognize the Bash backslash character for newlines. Solved it by formatting the multi-line commit into a single continuous command chain.
