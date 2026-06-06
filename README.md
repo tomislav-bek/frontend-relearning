@@ -24,7 +24,7 @@ To relearn core frontend topics step by step and document the process publicly a
 - [x] Attributes & Navigation
 - [x] Global Attributes & Page Navigation
 - [x] Entities, Iframes & Containers
-- [ ] ...
+- [x] HTML Practice Showcase
 
 ### CSS
 

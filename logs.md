@@ -286,3 +286,25 @@
 **Problems**
 
 - None.
+
+### 06.06.2026
+
+### HTML Practice Showcase
+
+**Process**
+
+- Created a master html-practice-showcase folder to integrate all previously learned HTML concepts into one unified project.
+- Designed a structured layout utilizing core semantic tags including header, nav, main, section, article, aside, and footer.
+- Implemented fully functional in-page navigation using id attributes to allow seamless scrolling between sections.
+- Consolidated diverse elements like forms, tables, ordered/unordered lists, and native media players into a single cohesive document.
+- Added a comprehensive README documentation file explaining the architectural decisions and accessibility features of the master page.
+
+**Learning**
+
+- A master webpage requires strict heading hierarchy and clean commenting to remain maintainable as the codebase grows.
+- Internal navigation anchors drastically improve user experience by linking menu items directly to specific section IDs.
+- Combining multiple advanced elements like forms and tables on one page requires a deep understanding of how block-level and inline elements behave together.
+
+**Problems**
+
+- None.

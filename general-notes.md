@@ -109,6 +109,8 @@ I started using clearer commit messages that describe the main purpose of each c
 - If I change several related things in one commit, I still use one message that describes the whole change.
 - Commit messages are short summaries, not a list of every single file or line changed.
 
+---
+
 ### Detailed Multi-line Commits
 
 For larger updates that include multiple related changes, I use a multi-line format (a short headline followed by bullet points). This keeps the Git history clean while providing clear context.
@@ -117,13 +119,13 @@ For larger updates that include multiple related changes, I use a multi-line for
 - **Blank line:** Separates the headline from the body.
 - **Body:** Bullet points describing exactly what was added, changed, or updated.
 
-**Terminal syntax for multi-line commits:**
-Each `-m` flag creates a new paragraph or bullet point in the terminal.
+**Terminal syntax for multi-line commits (Windows PowerShell):**
+Each `-m` flag creates a new paragraph or bullet point in the terminal. Use the backtick (`) character at the end of each line to continue the command on the next line.
 
-```bash
-git commit -m "Add audio and video learning materials" \
-           -m "- Add audio-and-video HTML page with examples" \
-           -m "- Add explanation and guide in audio-and-video.md" \
+```powershell
+git commit -m "Add audio and video learning materials" `
+           -m "- Add audio-and-video HTML page with examples" `
+           -m "- Add explanation and guide in audio-and-video.md" `
            -m "- Update main README with the new section"
 ```
 
