@@ -148,11 +148,11 @@ If you already made a commit but forgot to include a file (like `README.md`) or 
 #### Scenario A: You forgot to include a changed file
 
 1. Stage the forgotten file:
-    ```powershell
+    ```git
     git add filename.ext
     ```
 2. Inject the file into the last commit without changing the original commit message:
-    ```powershell
+    ```git
     git commit --amend --no-edit
     ```
 
@@ -160,7 +160,7 @@ If you already made a commit but forgot to include a file (like `README.md`) or 
 
 If the files are correct but you want to rewrite the headline or body:
 
-```powershell
+```git
 git commit --amend -m "New correct commit message headline" -m "- New correct bullet point"
 ```
 
@@ -168,53 +168,68 @@ git commit --amend -m "New correct commit message headline" -m "- New correct bu
 
 - **Only use `--amend` if you have NOT pushed yet.** Once you run `git push`, the commit is public on GitHub and you should not modify it. If it is already pushed, just make a regular new commit.
 
-### What if I accidentally amended AFTER running git push?
-
-If you already pushed the commit to GitHub and then used `--amend` locally, your terminal and GitHub will conflict. Your next regular `git push` will be rejected.
-
-**The Fix (For Personal Repositories Only):**
-You can force GitHub to accept your local amended commit and overwrite the remote history. Run this command in your terminal:
-
-```powershell
-git push --force
-```
-
-_Warning: Only use `--force` on your personal repositories where you are the only person working. Never use it on a shared team repository at a job, as it can overwrite your coworkers' code!_
-
 ---
 
 ## FIXING MISTAKES AFTER RUNNING GIT PUSH
 
 If you have already pushed your commits to GitHub, the golden rule in a professional environment is to leave the past commits alone. Do not use `--amend` or `--force`. Instead, you fix the mistake by creating a new forward-moving commit.
 
-### Scenario 1: You forgot to include a file or made a text mistake
+However, for personal portfolio repositories where you are the only developer, you can choose to clean up your history so it looks better.
+
+### Scenario 1: You forgot to include a file or made a text mistake (Standard Way)
 
 Simply make the changes, stage them, and create a new commit with a descriptive message.
 
 1. Add the forgotten changes:
-    ```powershell
+    ```git
     git add README.md
     ```
 2. Commit with a prefix like `docs:` or `fix:` to show it is a correction:
-    ```powershell
+    ```git
     git commit -m "docs: add missing global attributes section to README"
     ```
 3. Push normally:
-    ```powershell
+    ```git
     git push
     ```
 
-### Scenario 2: You introduced a major bug and need to completely undo a pushed commit
+### Scenario 2: Surgically editing an older pushed commit (Advanced Portfolio Cleanup)
+
+If you need to change the message or files of a specific commit that is already pushed, you can use an interactive rebase to target its unique ID (hash). Changing any text inside a commit will automatically destroy the old commit and generate a completely new unique ID.
+
+1. Start the interactive rebase by targeting the specific commit hash (add `~1` to edit that exact commit):
+    ```git
+    git rebase -i <commit_hash>~1
+    ```
+2. In the GitLens interface or text editor, change the keyword `pick` to `edit` (or `e`) next to the targeted commit. Save and close.
+3. Overwrite the commit message or files using the `--amend` flag. Use the backtick (`) to break lines in the terminal:
+    ```git
+    git commit --amend -m "Add HTML practice showcase master project" `
+    -m "- Add master index.html combining all learned HTML elements in one place" `
+    -m "- Update project README.md with showcase documentation" `
+    -m "- Update logs.md with the work done today" `
+    -m "- Update README.md with the completed HTML checklist"
+    ```
+4. Tell Git to finish the rebase process and return to the present:
+    ```git
+    git rebase --continue
+    ```
+5. Safe force push to GitHub to overwrite the remote history with your new commit ID:
+    ```git
+    git push --force-with-lease
+    ```
+
+### Scenario 3: You introduced a major bug and need to completely undo a pushed commit
 
 If a pushed commit broke the application and you need to safely roll it back without erasing the history, use the `git revert` command. This creates a new commit that does the exact opposite of the bad commit.
 
 1. Find the ID (hash) of the bad commit using `git log`.
 2. Run the revert command:
-    ```powershell
+    ```git
     git revert a1b2c3d4
     ```
 3. Push the reversion to GitHub:
-    ```powershell
+    ```git
     git push
     ```
 
@@ -222,6 +237,7 @@ If a pushed commit broke the application and you need to safely roll it back wit
 
 - **Preserves History**: It keeps a transparent log of what went wrong and how it was fixed.
 - **Team Safe**: It prevents synchronization conflicts for other developers working on the same project.
+- **Force with Lease**: Using `--force-with-lease` instead of a blunt `--force` is a better professional habit because it checks if anyone else has pushed code to the server before overwriting it.
 
 ---
 
