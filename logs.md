@@ -308,3 +308,52 @@
 **Problems**
 
 - None.
+
+---
+
+### 06.06.2026
+
+### Basic CSS Selectors
+
+**Process**
+
+- Created a basic-selectors folder containing index.html, style.css, and README.md.
+- Implemented core element selectors to apply global styles to headings.
+- Utilized reusable class selectors and demonstrated class chaining on a single element.
+- Applied a unique ID selector to target an individual featured element layout.
+- Documented the syntax rules and foundational target patterns in the module README.
+
+**Learning**
+
+- Class selectors require a dot prefix and are ideal for sharing styles across multiple elements.
+- ID selectors require a hash prefix, must remain completely unique, and apply to only one element per page.
+- Forgetting style prefixes causes the browser to parse the rule as a non-existent HTML tag.
+
+**Problems**
+
+- None.
+
+---
+
+### 06.06.2026
+
+### Advanced CSS Selectors
+
+**Process**
+
+- Created an advanced-selectors folder to handle complex element targeting rules.
+- Implemented grouping selectors to merge styling rules and reduce code repetition.
+- Used descendant and strict child combinators to control styles based on HTML nesting structure.
+- Applied adjacent sibling combinators, attribute selectors, pseudo-classes, and pseudo-elements.
+- Added high-visibility contrast colors to easily identify exactly which selector triggered the style.
+- Wrote an extensive README guide breaking down parent-child hierarchy and nesting levels.
+
+**Learning**
+
+- The descendant selector is broad and targets all matching elements at any nesting depth.
+- The child selector is strict and targets elements only on the first level of the parent.
+- Pseudo-classes handle dynamic user interaction states like mouse hover without using JavaScript.
+
+**Problems**
+
+- None.

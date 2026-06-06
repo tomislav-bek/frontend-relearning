@@ -28,6 +28,8 @@ To relearn core frontend topics step by step and document the process publicly a
 
 ### CSS
 
+- [x] Basic CSS Selectors
+- [x] Advanced CSS Selectors
 - [ ] ...
 
 ### JavaScript

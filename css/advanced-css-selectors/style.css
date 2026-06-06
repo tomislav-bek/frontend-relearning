@@ -1,0 +1,37 @@
+/* 1. Grouping Selector (comma): Styles both tags at the same time to avoid repeating code */
+h1,
+h2 {
+	font-family: sans-serif;
+	color: darkblue;
+}
+
+/* 2. Adjacent Sibling Selector (+): Styles a paragraph ONLY if it comes immediately after an h1 */
+h1 + p {
+	color: crimson;
+	font-weight: bold;
+}
+
+/* 3. Descendant Selector (space): Styles ALL paragraphs inside an article, no matter how deep they are */
+article p {
+	color: purple;
+}
+
+/* 4. Child Selector (>): Styles ONLY a paragraph that is a direct child of an article (ignores the one inside the div) */
+article > p {
+	background-color: yellow;
+}
+
+/* 5. Attribute Selector ([]): Styles an input only if its type attribute equals "email" */
+input[type="email"] {
+	border: 3px solid red;
+}
+
+/* 6. Pseudo-class (:): Styles an element during a specific state, like hovering with a mouse */
+a:hover {
+	color: orange;
+}
+
+/* 7. Pseudo-element (::): Styles a specific sub-part of an element, like the input placeholder text */
+input::placeholder {
+	color: hotpink;
+}

@@ -1,0 +1,23 @@
+/* Tag Selectors: Change the color of all h1 and h2 tags on the page */
+h1 {
+	color: darkblue;
+}
+
+h2 {
+	color: slateblue;
+}
+
+/* Class Selectors: Reusable styles (always start with a dot prefix) */
+.text-blue {
+	color: blue;
+}
+
+.text-large {
+	font-size: 20px;
+}
+
+/* ID Selector: Unique style for a single element (always starts with a hash prefix) */
+#featured-box {
+	background-color: lightgray;
+	font-weight: bold;
+}
