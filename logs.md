@@ -357,3 +357,27 @@
 **Problems**
 
 - None.
+
+---
+
+### 07.06.2026
+
+### CSS Box Model and Display Properties
+
+**Process**
+
+- Created a box-model-display folder containing index.html, style.css, and README.md.
+- Implemented a universal selector reset to enforce global border-box calculation standards.
+- Engineered a structured visual layout demonstrating content, padding, border, and margin relationships.
+- Created explicit code isolation comparing block-level rendering constraints with inline text elements.
+- Documented W3C layout behaviors and Inline Formatting Context limitations within the folder documentation.
+
+**Learning**
+
+- The border-box configuration encapsulates padding and borders within the defined width to ensure predictable math.
+- Block elements dominate full vertical and horizontal parent layouts, enforcing document structure.
+- Inline elements completely deactivate fixed dimension engines and vertical margins to preserve text sequence alignment.
+
+**Problems**
+
+- Encountered a syntax rendering issue caused by accidentally writing HTML markup inside the style.css file due to tab confusion. Resolved the bug by identifying the file mismatch, moving the markup to index.html, and verifying that the CSS engine parsed the layout correctly.

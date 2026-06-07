@@ -58,3 +58,29 @@ CSS (Cascading Style Sheets) is the foundational style sheet language of the web
 - The `rel="stylesheet"` attribute tells the browser that the connected resource is a style sheet.
 - The `href` attribute defines the exact file path to your external CSS document.
 - Placing this tag inside the HTML `<head>` ensures the browser loads and applies the styles before rendering the body text, preventing unstyled content flashes.
+
+---
+
+### The "Full Width" Misconception
+
+When a block element is said to occupy "full width," it means **100% of its parent container's content width**, not the entire viewport/page width. A block element is horizontally contained by its parent's boundaries and will respect any padding constraints applied to that parent.
+
+---
+
+### Why Inline Elements Ignore Dimensions
+
+By architectural design, inline elements (`display: inline`) are meant to flow seamlessly inside a line of text, just like individual words in a sentence.
+
+Because breaking or expanding a single word horizontally or vertically would destroy the alignment of the entire paragraph, the browser engine is programmed to explicitly disable layout box controls for these elements. As a strict technical rule:
+
+- **`width` and `height` properties are completely deactivated** because an inline element can only be as wide and as tall as its inner content dictates.
+- **`margin-top` and `margin-bottom` properties are completely ignored** to prevent the element from disrupting the vertical line-height of the surrounding text sequence.
+
+---
+
+### Block-Level Space Reservation vs. Inner Content Behavior
+
+When a block element expands to occupy full width, it behaves as a strict layout inhibitor rather than scaling its inner text layout properties:
+
+- **Visual Box Reservation**: The element forcefully reserves the entire horizontal plane inside its parent container. Any declared `background-color` or horizontal borders will stretch across the entire available container width. No surrounding elements are permitted to occupy this row.
+- **Inner Content Constraints**: The actual text content inside the block container remains unaffected by the horizontal expansion. The text string maintains its natural character length and alignments (defaulting to the left margin), leaving the remainder of the reserved horizontal track as unrendered whitespace.

@@ -1,0 +1,80 @@
+/* ==========================================================================
+   GLOBAL RESET
+   ========================================================================== */
+
+/* 
+   By default, browsers add automatic margins/paddings (e.g. body has 8px margin).
+   The universal selector (*) strips everything to 0 to ensure cross-browser consistency.
+   'border-box' forces width calculations to include padding and border.
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Add padding to body just to keep content away from the absolute edge of the screen */
+body {
+	font-family: sans-serif;
+	padding: 30px;
+}
+
+h1 {
+	font-size: 22px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: darkblue;
+}
+
+/* ==========================================================================
+   SECTION 1: THE BOX MODEL ANATOMY
+   ========================================================================== */
+
+.box-anatomy {
+	width: 400px;
+	background-color: yellow;
+
+	/* 1. Padding: Space INSIDE the box (between text and border). Inherits yellow background. */
+	padding: 30px;
+
+	/* 2. Border: The frame around padding. In this case, 5px solid Crimson Red. */
+	border: 5px solid crimson;
+
+	/* 3. Margin: Invisible space OUTSIDE the border that pushes Section 2 down by 40px. */
+	margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   SECTION 2: DISPLAY PROPERTY TYPES
+   ========================================================================== */
+
+/* 
+   BLOCK BEHAVIOR:
+   - Takes up 100% width by default.
+   - Even though we restrict the width to 250px, Element 2 STILL sits below Element 1.
+   - Fully respects width, height, padding, and margins.
+*/
+.block-example {
+	display: block;
+	width: 250px;
+	background-color: lightblue;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+/* 
+   INLINE FLOW PROPERTIES:
+   - Elements with 'display: inline' generate inline boxes that participate strictly in an Inline Formatting Context (IFC).
+   - Per W3C specification, 'width' and 'height' properties do not apply to non-replaced inline boxes and are completely ignored. 
+   - Vertical margins ('margin-top' and 'margin-bottom') have no effect on the line-box height calculation, making them functionally inactive.
+   - Inline elements are architecturally restricted to text formatting and are never utilized for structural layout layout mechanics.
+*/
+.inline-example {
+	display: inline;
+	background-color: hotpink;
+	padding: 10px;
+
+	/* Inactive properties due to Inline Formatting Context constraints: */
+	width: 300px;
+	margin-top: 50px;
+}
