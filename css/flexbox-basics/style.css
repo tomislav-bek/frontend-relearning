@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 30px;
+}
+
+h1 {
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: darkblue;
+}
+
+.box {
+	background-color: lightblue;
+	padding: 15px;
+	margin: 5px;
+	font-weight: bold;
+}
+
+/* 1. The container becomes flex — children now sit in a row by default */
+.flex-container {
+	display: flex;
+	background-color: #eee;
+	border: 2px dashed gray;
+	margin-bottom: 10px;
+}
+
+/* justify-content controls spacing along the MAIN axis (horizontal, since direction is row) */
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+/* align-items controls positioning along the CROSS axis (vertical, since direction is row) */
+.tall {
+	height: 150px;
+}
+
+.align-center {
+	align-items: center;
+}
+
+/* flex-direction: column flips the main axis to vertical — now justify-content controls vertical spacing instead */
+.column {
+	flex-direction: column;
+	width: 150px;
+}

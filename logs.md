@@ -381,3 +381,26 @@
 **Problems**
 
 - Encountered a syntax rendering issue caused by accidentally writing HTML markup inside the style.css file due to tab confusion. Resolved the bug by identifying the file mismatch, moving the markup to index.html, and verifying that the CSS engine parsed the layout correctly.
+
+### 11.07.2026
+
+### Flexbox Basics
+
+**Process**
+
+- Created a flexbox-basics folder containing index.html, style.css, and README.md.
+- Implemented justify-content examples demonstrating main-axis alignment (center, space-between).
+- Implemented align-items example demonstrating cross-axis centering on a fixed-height container.
+- Tested flex-direction: column to observe axis role reversal and the align-items stretch default becoming visible.
+- Documented the Flexbox module in README.md following the numbered-section format used in previous modules.
+
+**Learning**
+
+- display: flex only affects direct children — grandchildren are unaffected unless also given display: flex.
+- justify-content controls the main axis; align-items controls the cross axis, regardless of which direction the main axis points.
+- flex-direction determines which axis is main, but does not itself change box behavior (width/height/margin respect) — that change happens once when display: flex is set on the parent.
+- align-items has a default value of stretch, which is easy to miss in row layouts (no fixed height) but becomes visible in column layouts once the container has a fixed width.
+
+**Problems**
+
+- None.
