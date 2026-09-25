@@ -71,6 +71,23 @@ Personal notes on how I set up Git and GitHub for the first time.
 
 ---
 
+**How to update an expired or invalid token on Windows:**
+
+If Git operations fail with `remote: Invalid username or token. Authentication failed`, the cached Windows credentials need to be updated with the fresh token.
+
+- **Credential Manager Update via PowerShell:**
+  Run this command in the terminal to force the credential manager to prompt for the new token:
+
+    ```powershell
+    git credential-manager github login
+    ```
+
+    When the credential popup appears, type your GitHub username (`username`) and **paste your Personal Access Token as the password**.
+
+    ```
+    Type or paste your token immediately when prompted, and press Enter to lock it in.
+    ```
+
 ## DAILY WORKFLOW
 
 - Every time you make changes:
