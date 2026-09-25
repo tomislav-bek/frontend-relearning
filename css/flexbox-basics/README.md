@@ -42,8 +42,16 @@ This distinction matters because the two most important alignment properties eac
 
 Distributes items along the main axis.
 
+- `justify-content: flex-start` — aligns all items to the start of the container (default).
+- `justify-content: flex-end` — aligns all items to the end of the container.
 - `justify-content: center` — groups all items together in the center.
 - `justify-content: space-between` — pushes the first and last items to the edges, evenly spacing the rest.
+- `justify-content: space-around` — distributes items evenly, giving each item equal space on both sides (resulting in double space between elements).
+- `justify-content: space-evenly` — distributes items so that the spacing between any two items, and the space to the edges, is completely equal.
+- `justify-content: start` — aligns items to the absolute start of the main axis (respects writing mode).
+- `justify-content: end` — aligns items to the absolute end of the main axis (respects writing mode).
+- `justify-content: left` — aligns items toward the left edge of the container.
+- `justify-content: right` — aligns items toward the right edge of the container.
 
 ---
 
